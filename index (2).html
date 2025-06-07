@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maewja City - กฎและนโยบาย</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #e75480;
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .rule-list button {
+      width: 100%;
+      text-align: left;
+      background-color: #ffe4ec;
+      border: none;
+      padding: 15px 20px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+      color: #d6336c;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .rule-list button:hover {
+      background-color: #ffc0cb;
+    }
+
+    .rule-list i {
+      margin-right: 10px;
+      color: #e75480;
+    }
+
+    .rule-content {
+      display: none;
+      background-color: #fff;
+      padding: 18px 20px;
+      border-left: 4px solid #e75480;
+      border-radius: 0 0 12px 12px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .rule-content ol, .rule-content ul {
+      padding-left: 20px;
+    }
+
+    .rule-content ul li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffb6c1;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-10px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <i class="fas fa-seedling"></i> Maewja City - กฎและนโยบาย
+  </header>
+
+  <div class="container">
+    <h2><i class="fas fa-scroll"></i> กฎและนโยบาย</h2>
+
+    <div class="rule-list">
+      <!-- หมวดที่ 1 -->
+      <button onclick="toggleRule('rule1')"><i class="fas fa-user-astronaut"></i> หมวดที่ 1: กฎการเล่น Roleplay</button>
+      <div id="rule1" class="rule-content">
+        <p><strong><i class="fas fa-scroll"></i> Roleplay:</strong> การจำลองบทบาทของตัวละครในโลกเสมือน ให้มีชีวิตเหมือนคนจริง โดยอยู่ภายใต้กฎของประเทศ</p>
+        <ul>
+          <li><i class="fas fa-user"></i> <strong>In Character (IC):</strong> การกระทำทั้งหมดที่อยู่ในบทบาทของตัวละคร</li>
+          <li><i class="fas fa-user-slash"></i> <strong>Out Of Character (OOC):</strong> การพูดหรือกระทำใด ๆ ที่ไม่เกี่ยวกับตัวละคร เช่น การพูดเรื่องชีวิตจริง</li>
+          <li><i class="fas fa-brain"></i> <strong>Meta Gaming (MG):</strong> การนำข้อมูล OOC มาใช้ใน IC เช่น ทราบชื่อจาก Discord แล้วเรียกในเกม</li>
+          <li><i class="fas fa-bolt"></i> <strong>Power Gaming (PG):</strong> การกระทำเหนือมนุษย์ เช่น กระโดดจากตึกสูงโดยไม่เจ็บ</li>
+          <li><i class="fas fa-car-crash"></i> <strong>Drive By (DB):</strong> ขับรถชนคนหลายคนโดยไม่มีเหตุผลหรือมีเจตนา</li>
+          <li><i class="fas fa-hand-holding-dollar"></i> <strong>OOC Trading:</strong> ห้ามแลกเปลี่ยนของในเกมกับเงินจริงหรือของนอกเกมเด็ดขาด</li>
+          <li><i class="fas fa-door-open"></i> <strong>Quit Game (QG):</strong> การออกจากเกมโดยไม่มีเหตุผล เช่น ออกจากเกมเพื่อหนีการจับ</li>
+          <li><i class="fas fa-ban"></i> <strong>Breaking RP:</strong> การทำลายบทบาท เช่น QG กลางการไล่ล่า หรือแสดงออกนอกบทบาทอย่างชัดเจน</li>
+          <li><i class="fas fa-skull-crossbones"></i> <strong>พฤติกรรม Toxic:</strong> ห้ามแสดงพฤติกรรมก้าวร้าว รุนแรง หรือเป็นพิษต่อผู้อื่น เช่น:
+            <ul>
+              <li><i class="fas fa-comment-slash"></i> ใช้คำหยาบคายรุนแรง บูลลี่หรือข่มขู่ผู้เล่นอื่น</li>
+              <li><i class="fas fa-hand-paper"></i> คุกคามทางเพศ หรือแสดงพฤติกรรมไม่เหมาะสมในบทบาท</li>
+              <li><i class="fas fa-user-secret"></i> แอบอ้างเป็นทีมงาน หรือสร้างความเข้าใจผิดต่อผู้เล่นใหม่</li>
+              <li><i class="fas fa-head-side-cough"></i> สร้างดราม่าหรือก่อความรำคาญแบบเจตนา</li>
+            </ul>
+          </li>
+        </ul>
+        <p><i class="fas fa-gavel"></i> <strong>หมายเหตุ:</strong> การกระทำผิดจะได้รับโทษเป็น <span style="color:#ffaa00;">ใบเหลือง</span>, <span style="color:#ff8800;">ใบส้ม</span>, หรือ <span style="color:#ff3333;">ใบแดง</span> ตามความรุนแรง</p>
+      </div>
+
+      <!-- หมวดที่ 2 -->
+      <button onclick="toggleRule('rule2')"><i class="fas fa-gift"></i> หมวดที่ 2: กฎกิจกรรมต่างๆของ Roleplay</button>
+      <div id="rule2" class="rule-content">
+        กิจกรรมต้องดำเนินตามความสมจริง ห้ามทำลายประสบการณ์ของผู้เล่นอื่นโดยไม่มีเหตุผล<br>
+        ต้องเคารพการตัดสินใจของทีมงาน หากมีปัญหาให้ติดต่อแอดมินเท่านั้น <br>
+        1. ห้ามใช้คำหยาบคาย บัพ100/Oc<br>
+        2. ห้ามใช้โปรแกรมโกรง โปรแกรมนอกเกม ตัวรัน<br>
+        3. ห้ามใช้บัคหรือข้อผิดพลาด เพื่อหาผลประโยชน์<br>
+        4. ห้ามเปิดเสียงรบกวน เสียงดัง
+      </div>
+
+      <!-- หมวดที่ 3 -->
+      <button onclick="toggleRule('rule3')"><i class="fas fa-heart"></i> หมวดที่ 3: กฎเพิ่มเติมต่างๆของ Roleplay</button>
+      <div id="rule3" class="rule-content">
+        <ol>
+          <li>ห้ามเรื้อน หรือก่อความวุ่นวายให้ผู้เล่นอื่น</li>
+          <li>ห้ามใช้โปรแกรมโกง โปรแกรมช่วยเล่น หรือทำบัค หากตรวจพบจะถูกแบนทันที</li>
+          <li>ห้ามตีผู้เล่นอื่นโดยไม่มีเหตุ หากมีการแจ้ง จะโดนใบ/แบล็คลิสต์ทันที</li>
+          <li>ห้ามบูลลี่ คุกคามทางเพศ และห้าม MG (Metagaming)</li>
+          <li>ห้ามซื้อขาย OC (เงินจริง) หากพบเห็นจะถูกแบนทันที</li>
+          <li>ห้ามแอบอ้างเป็นแอดมินหรือนายกโดยเด็ดขาด หากพบเห็นจะถูกลงโทษโดยทันที</li>
+          <li>ห้ามใส่ชุดสูทนอกประเทศเข้ามาในประเทศ หากพบเห็นจะถูกแบล็คลิสต์ และห้ามเข้าร่วมแก๊ง</li>
+          <li>ผู้เล่นทุกคนห้ามบิดของ ปล้น ทำร้ายร่างกาย หรือทะเลาะวิวาท หากพบเจอ อาจมีโทษถึงขั้นปลดไวริส</li>
+          <li>ห้ามส่งลิงก์หรือสื่อที่ไม่เกี่ยวข้องกับทวิตหรือ Discord ของประเทศโดยเด็ดขาด</li>
+          <li>ห้ามแอบอ้างเป็นบุคคลอื่น หากเจ้าตัวแจ้ง อาจโดนโทษสูงสุด ได้แก่ <strong>ใบแดงถาวร + รีตัว</strong></li>
+          <li>ห้ามตีกันในพื้นที่ Safe Zone หากพบเห็น รับใบเตือน 1 ใบ พร้อมโทษปรับ</li>
+          <li>ประเทศของเราเป็นประเทศแห่งคอนเทนต์ ผู้เล่นสามารถแต่งตัวเหนือมนุษย์และแสดงออกตามใจชอบได้</li>
+          <li>ห้ามเปิดซาวด์แพต บัพ100 บัพถึงoc</li>
+        </ol>
+      </div>
+
+      <!-- หมวดที่ 4 -->
+      <button onclick="toggleRule('rule4')"><i class="fas fa-graduation-cap"></i> หมวดที่ 4: กฎ Training</button>
+      <div id="rule4" class="rule-content">
+        กฎสำหรับการ Training<br>
+        1. ห้ามใช้คำหยาบคายหรือคำที่ไม่เหมาะสม บัพ100 ถึงOc<br>
+        2. ห้ามใช้โปรแกรมโกง ตัวรันสคริปต์หรือโปรแกรมภายนอก<br>
+        3. ห้ามใช้บัคหรือข้อผิดพลาด เพื่อหาผลประโยชน์ของตนเอง<br>
+        4. ห้ามหนีเข้าเซฟโซนเพื่อผลประโยชน์<br>
+        5. ห้ามเปิดเสียงดังรบกวน soundpad voicemod clownfish <br>
+        6. ห้ามถืออาวุธที่ได้จากการบัค นับว่าใช้บัคของเกม
+             <div>
+    </div>
+  </div>
+
+  <footer>
+    <i class="fas fa-heart"></i> MaewJa City &copy; 2025 - สร้างด้วยความรัก
+  </footer>
+
+  <script>
+    function toggleRule(id) {
+      const content = document.getElementById(id);
+      const isOpen = content.style.display === "block";
+      document.querySelectorAll('.rule-content').forEach(el => el.style.display = "none");
+      if (!isOpen) {
+        content.style.display = "block";
+        content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  </script>
+
+</body>
+</html>
